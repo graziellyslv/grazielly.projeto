@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/produtos', produtosRoutes);
 
 repo.iniciar()
-  .then(() => {
-    app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
-  })
-  .catch(erro => console.log('Erro ao abrir o banco de dados:', erro));
+    .then(() => {
+        app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
+    })
+    .catch(erro => console.log('Erro ao abrir o banco de dados:', erro));
